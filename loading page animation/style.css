@@ -1,0 +1,27 @@
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Adjust background color as needed */
+}
+
+.flag {
+    border: 2px solid black;
+    width: 200px; /* Adjust flag width */
+    height: auto; /* Maintain aspect ratio */
+    animation: pulse 0.6s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.hidden {
+    display: none;
+}
